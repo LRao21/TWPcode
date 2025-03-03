@@ -5,7 +5,7 @@ body {
 .wrapper {
     background-color:wheat;
     width: 1000px;
-    height:8940px;
+    height:7590px;
     margin: auto;
     padding: 10px;
 }
@@ -84,7 +84,6 @@ a:hover{
 	  }
 		
 .sitenav a:hover{
-     border-radius: 1em;
      color: rgb(125, 90, 165);
      background: powderblue;	
     }
@@ -98,6 +97,7 @@ a:hover{
     margin-bottom: 20px;
     z-index: 1;
 }
+
 
 .navSite{
     border-radius: 0.5em;
