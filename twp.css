@@ -7,9 +7,9 @@ body {
 .wrapper {
     background-color:wheat;
     width: 1000px;
-    height:7890px;
+    height:8100px;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 nav {
@@ -43,6 +43,7 @@ a:hover{
     margin-right: 10px;
     width: 100px;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .nav:hover {
@@ -62,7 +63,7 @@ a:hover{
 }
 
 .site-header {
-    margin-bottom: 80px;
+    margin-bottom: 150px;
 }
 
 .sitenav {
@@ -72,7 +73,8 @@ a:hover{
     background: wheat;
     text-align: center;
     float: right;
-    margin: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
   }
 		
 .sitenav a {
@@ -82,7 +84,7 @@ a:hover{
     color: rgba(104, 48, 104, 0.688);
     background: pink;
     box-shadow: 2px 5px;
-    padding: 8px; /* adjust as needed */
+    padding: 8px;
 	  }
 		
 .sitenav a:hover{
@@ -90,14 +92,12 @@ a:hover{
      background: powderblue;	
     }
 
-.site-logo-name {
-    width: 200px;
-    height: 80px;
+.site-logo img {
+    width: 300px;
+    height: 150px;
     float: left;
-    padding-bottom: 20px;
-    padding-left: 20px;
     margin-bottom: 20px;
-    z-index: 1;
+    margin-left: 10px;
 }
 
 .navSite{
@@ -114,34 +114,39 @@ h1 {
     background-color: rgb(184, 250, 250);
     font-size: 60px;
     line-height: 125%;
-    font-style: oblique;
 
     height: 300px;
     width: 92%;
 
     border: solid powderblue 20px;
     padding: 10px;
-    margin: 12px auto;
+    margin-left: 10px;
+    margin-bottom: 2px;
     display: block;
 
     text-align: center;
-    z-index: 2;
 }
 
 h2 {
     color:rgb(12, 88, 149); 
     font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 h3 {
     font-size: 25px;
     color:rgb(12, 88, 149); 
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 p {
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 150%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .gallery-grid {
@@ -156,7 +161,7 @@ p {
     height: 950px;
     margin-bottom: 100px;
     margin-right: 80px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
                 
 .gallery-item {
@@ -170,6 +175,10 @@ p {
 .gallery-item p {
     margin: .25em 0;
     line-height: 135%;
+    font-size: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
 }
 
 .gallery-item img {
