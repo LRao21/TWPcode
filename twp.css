@@ -1,11 +1,13 @@
 body {
     background-color:rosybrown;
+    font-size: 22px;
+    line-height: 125%;
 }
 
 .wrapper {
     background-color:wheat;
     width: 1000px;
-    height:7590px;
+    height:7890px;
     margin: auto;
     padding: 10px;
 }
@@ -31,7 +33,6 @@ a:hover{
     color:rgb(39, 64, 193);
 }
 
-
 .nav{
     border-radius: 0.5em;
     background-color: pink;
@@ -41,6 +42,7 @@ a:hover{
     margin-left: 10px;
     margin-right: 10px;
     width: 100px;
+    font-size: 16px;
 }
 
 .nav:hover {
@@ -98,7 +100,6 @@ a:hover{
     z-index: 1;
 }
 
-
 .navSite{
     border-radius: 0.5em;
     background-color: antiquewhite;
@@ -153,7 +154,7 @@ p {
     justify-content: space-between;
     width: 850px;
     height: 950px;
-    margin-bottom: 85px;
+    margin-bottom: 100px;
     margin-right: 80px;
     margin-left: 5px;
 }
@@ -201,6 +202,10 @@ td {
     padding: 5px;
 }
 
+.legend{
+    font-size: 12px;
+}
+
 .lo {
     display: inline-block;
     font-size: 18px;            
@@ -212,4 +217,52 @@ td {
     width: 32%;
     height: (390x0.9)px;
     margin-right: 40px;
+}
+
+#tableDiv:has(.legend #legendTrash:hover) #trash1{
+    color: plum;
+}
+
+#tableDiv:has(.legend #legendTrash:hover) #trash2{
+    color: plum;
+}
+
+#tableDiv:has(.legend #legendTrash:hover) #trash3{
+    color: plum;
+}
+
+.legend #legendTrash:hover {
+    color: plum;
+}
+
+#tableDiv:has(.legend #legendCardboard:hover) #packing1{
+    color: red;
+}
+
+#tableDiv:has(.legend #legendCardboard:hover) #packing2{
+    color: red;
+}
+
+.legend #legendCardboard:hover {
+    color: red;
+}
+
+#tableDiv:has(.legend #legendSwap:hover) #swap{
+    color: mediumaquamarine;
+}
+
+.legend #legendSwap:hover {
+    color: mediumaquamarine;
+}
+
+#tableDiv:has(.legend #legendRecycle:hover) #rec1{
+    color: mediumslateblue;
+}
+
+#tableDiv:has(.legend #legendRecycle:hover) #rec2{
+    color: mediumslateblue;
+}
+
+.legend #legendRecycle:hover {
+    color: mediumslateblue;
 }
