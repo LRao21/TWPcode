@@ -134,6 +134,13 @@ h2 {
     margin-right: 15px;
 }
 
+.prefaceP {
+    background: linear-gradient(to bottom, black, wheat);
+    background-clip: text;
+    color: transparent;
+}
+
+
 h3 {
     font-size: 25px;
     color:rgb(12, 88, 149); 
