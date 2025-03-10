@@ -7,9 +7,14 @@ body {
 .wrapper {
     background-color:wheat;
     width: 1000px;
-    height:8100px;
+    height:7565px;
     margin: auto;
     padding: 20px;
+    border-radius: 1.5em;
+}
+
+#authorPage {
+    height: 1200px;
 }
 
 nav {
@@ -121,11 +126,12 @@ h1 {
     border: solid powderblue 20px;
     padding: 10px;
     margin-left: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 12px;
     display: block;
 
     text-align: center;
 }
+
 
 h2 {
     color:rgb(12, 88, 149); 
@@ -139,7 +145,6 @@ h2 {
     background-clip: text;
     color: transparent;
 }
-
 
 h3 {
     font-size: 25px;
@@ -227,6 +232,10 @@ td {
     font-size: 18px;            
 }
 
+.me {
+    height: 400px;
+}
+
 .me_image {
     float:left;
     padding: 2px;
@@ -234,6 +243,14 @@ td {
     height: (390x0.9)px;
     margin-right: 40px;
 }
+
+#author {
+    width: 55%;
+    height: 310px;
+    float: right;
+    margin: 0px;
+}
+
 
 #tableDiv:has(.legend #legendTrash:hover) #trash1{
     color: plum;
@@ -281,4 +298,19 @@ td {
 
 .legend #legendRecycle:hover {
     color: mediumslateblue;
+}
+
+.footer {
+    margin-top: 60px;
+    background: repeating-linear-gradient(rgb(252, 215, 252), #bbecf2);
+    height: 60px;
+    border-radius: 1.5em;
+    position: relative;
+    padding-top:100px;
+}
+
+.footer a {
+    width: 155px;
+    margin-bottom: 2px;
+    font-size: 22px;
 }
