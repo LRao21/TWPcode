@@ -1,0 +1,33 @@
+body{
+    color: #ac6e23c7;
+    background-color: #a20129bc;
+}
+.frontLook {
+    border: 30px solid #f59d31c7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 900px;
+    width: 900px;
+    background-color: rgb(250, 205, 233);
+    border-radius: 50%;
+}
+
+.frontLook .site-logo{
+    margin-top: 300px;
+    height: 300px;
+    width: 500px;
+    float: left;
+    margin-left: 30px;
+}
+
+.frontLook h1{
+    margin-top: 320px;
+    float:right;
+    width: 350px;
+    height: 300px;
+    margin-left: 20px;
+    font-size: 80px;
+}
