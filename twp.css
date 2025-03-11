@@ -7,15 +7,14 @@ body {
 }
 
 .wrapper {
-    background-color:wheat;
+    background: wheat;
     width: 1000px;
-    height:7565px;
+    height:7610px;
     margin: auto;
     padding: 20px;
     border-radius: 1.5em;
     position: relative;
 }
-
 
 nav {
     background-color: antiquewhite;
@@ -26,6 +25,7 @@ nav {
     text-align:center;
 }
 
+/* Links */
 a {
     padding: 5px;
     text-decoration: none;
@@ -37,7 +37,9 @@ a:hover{
     text-decoration: none;
     color:rgb(39, 64, 193);
 }
+/*----------------------------*/
 
+/* On-page navigation */
 .nav{
     border-radius: 0.5em;
     background-color: pink;
@@ -66,7 +68,9 @@ a:hover{
     color:rgb(125, 90, 165);
     font-weight: bold;
 }
+/*----------------------------*/
 
+/* Website Navigation */
 .site-header {
     margin-bottom: 150px;
 }
@@ -113,6 +117,7 @@ a:hover{
     margin-right:10px;
     margin-left:10px;
 }
+/*----------------------------*/
 
 /* Text (Main Page)*/
 h1 {
@@ -135,6 +140,7 @@ h1 {
 
 h2 {
     color:rgb(12, 88, 149); 
+    line-height: 125%;
     font-size: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -142,6 +148,7 @@ h2 {
 
 h3 {
     font-size: 25px;
+    line-height: 125%;
     color:rgb(12, 88, 149); 
     margin-left: 15px;
     margin-right: 15px;
@@ -156,11 +163,16 @@ p {
     margin-left: 15px;
     margin-right: 15px;
 }
+/*----------------------------*/
 
 /* Preface fade effect */
-.prefaceP {
+#prefaceP {
     background: linear-gradient(to bottom, black, wheat);
     background-clip: text;
+    color: transparent;
+}
+
+#prefaceP p {
     color: transparent;
 }
 /*----------------------------*/
@@ -213,7 +225,7 @@ p {
 /*----------------------------*/
 
 /* Table */
-table {
+  table {
     border: solid rgb(171, 191, 227) 2px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -239,65 +251,44 @@ td {
     font-size: 18px;            
 }
 
+#tableDiv p {
+    font-size: 12px;
+}
+
 /* Trash */
+#tableDiv:has(.legend #legendTrash:hover) #trash1{ color: plum;}
 
-#tableDiv:has(.legend #legendTrash:hover) #trash1{
-    color: plum;
-}
+#tableDiv:has(.legend #legendTrash:hover) #trash2{ color: plum;}
 
-#tableDiv:has(.legend #legendTrash:hover) #trash2{
-    color: plum;
-}
+#tableDiv:has(.legend #legendTrash:hover) #trash3{ color: plum;}
 
-#tableDiv:has(.legend #legendTrash:hover) #trash3{
-    color: plum;
-}
-
-.legend #legendTrash:hover {
-    color: plum;
-}
+.legend #legendTrash:hover { color: plum;}
 
 /* Group recycling */
+#tableDiv:has(.legend #legendCardboard:hover) #packing1{ color: red;}
 
-#tableDiv:has(.legend #legendCardboard:hover) #packing1{
-    color: red;
-}
+#tableDiv:has(.legend #legendCardboard:hover) #packing2{ color: red;}
 
-#tableDiv:has(.legend #legendCardboard:hover) #packing2{
-    color: red;
-}
-
-.legend #legendCardboard:hover {
-    color: red;
-}
+.legend #legendCardboard:hover { color: red;}
 
 /* Replacement */
+#tableDiv:has(.legend #legendSwap:hover) #swap{ color: mediumaquamarine;}
 
-#tableDiv:has(.legend #legendSwap:hover) #swap{
-    color: mediumaquamarine;
-}
+.legend #legendSwap:hover { color: mediumaquamarine;}
 
-.legend #legendSwap:hover {
-    color: mediumaquamarine;
-}
 /* Recycling */
-#tableDiv:has(.legend #legendRecycle:hover) #rec1{
-    color: mediumslateblue;
-}
+#tableDiv:has(.legend #legendRecycle:hover) #rec1{ color: mediumslateblue;}
 
-#tableDiv:has(.legend #legendRecycle:hover) #rec2{
-    color: mediumslateblue;
-}
+#tableDiv:has(.legend #legendRecycle:hover) #rec2{ color: mediumslateblue;}
 
-.legend #legendRecycle:hover {
-    color: mediumslateblue;
-}
+.legend #legendRecycle:hover {color: mediumslateblue;}
 /*----------------------------*/
 
 /* Footer for Main Page, brings links to bottom too */
 .footer {
-    background: repeating-linear-gradient(rgb(252, 215, 252), #bbecf2);
-    height: 60px;
+    margin-top: 20px;
+    background: repeating-linear-gradient(wheat, rgb(252, 215, 252));
+    height: 50px;
     width: 100%;
     border-radius: 1.5em;
     position: relative;
@@ -309,10 +300,13 @@ td {
 }
 
 .footer a {
-    width: 155px;
+    background-color: transparent;
+    border-radius: 0em;
+    width: 100%;
     margin-bottom: 2px;
     margin-left: 12px;
     margin-right: 12px;
+    box-shadow: 0px 0px;
     font-size: 22px;
 }
 /*----------------------------*/
