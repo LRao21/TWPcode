@@ -1,7 +1,9 @@
+/* General Structure (Base) */
 body {
     background-color:rosybrown;
     font-size: 22px;
     line-height: 125%;
+    font-family: 'Times New Roman', serif;
 }
 
 .wrapper {
@@ -11,11 +13,9 @@ body {
     margin: auto;
     padding: 20px;
     border-radius: 1.5em;
+    position: relative;
 }
 
-#authorPage {
-    height: 1200px;
-}
 
 nav {
     background-color: antiquewhite;
@@ -114,6 +114,7 @@ a:hover{
     margin-left:10px;
 }
 
+/* Text (Main Page)*/
 h1 {
     color:rgb(33, 73, 152);
     background-color: rgb(184, 250, 250);
@@ -132,18 +133,11 @@ h1 {
     text-align: center;
 }
 
-
 h2 {
     color:rgb(12, 88, 149); 
     font-size: 30px;
     margin-left: 15px;
     margin-right: 15px;
-}
-
-.prefaceP {
-    background: linear-gradient(to bottom, black, wheat);
-    background-clip: text;
-    color: transparent;
 }
 
 h3 {
@@ -156,11 +150,22 @@ h3 {
 p {
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
     line-height: 150%;
+    
     margin-left: 15px;
     margin-right: 15px;
 }
 
+/* Preface fade effect */
+.prefaceP {
+    background: linear-gradient(to bottom, black, wheat);
+    background-clip: text;
+    color: transparent;
+}
+/*----------------------------*/
+
+/* Gallery */
 .gallery-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -205,7 +210,9 @@ p {
 .gallery-grid .gallery-item:hover {
     filter: blur(0px);
   }
+/*----------------------------*/
 
+/* Table */
 table {
     border: solid rgb(171, 191, 227) 2px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -232,25 +239,7 @@ td {
     font-size: 18px;            
 }
 
-.me {
-    height: 400px;
-}
-
-.me_image {
-    float:left;
-    padding: 2px;
-    width: 32%;
-    height: (390x0.9)px;
-    margin-right: 40px;
-}
-
-#author {
-    width: 55%;
-    height: 310px;
-    float: right;
-    margin: 0px;
-}
-
+/* Trash */
 
 #tableDiv:has(.legend #legendTrash:hover) #trash1{
     color: plum;
@@ -268,6 +257,8 @@ td {
     color: plum;
 }
 
+/* Group recycling */
+
 #tableDiv:has(.legend #legendCardboard:hover) #packing1{
     color: red;
 }
@@ -280,6 +271,8 @@ td {
     color: red;
 }
 
+/* Replacement */
+
 #tableDiv:has(.legend #legendSwap:hover) #swap{
     color: mediumaquamarine;
 }
@@ -287,7 +280,7 @@ td {
 .legend #legendSwap:hover {
     color: mediumaquamarine;
 }
-
+/* Recycling */
 #tableDiv:has(.legend #legendRecycle:hover) #rec1{
     color: mediumslateblue;
 }
@@ -299,18 +292,52 @@ td {
 .legend #legendRecycle:hover {
     color: mediumslateblue;
 }
+/*----------------------------*/
 
+/* Footer for Main Page, brings links to bottom too */
 .footer {
-    margin-top: 60px;
     background: repeating-linear-gradient(rgb(252, 215, 252), #bbecf2);
     height: 60px;
+    width: 100%;
     border-radius: 1.5em;
     position: relative;
     padding-top:100px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .footer a {
     width: 155px;
     margin-bottom: 2px;
+    margin-left: 12px;
+    margin-right: 12px;
     font-size: 22px;
+}
+/*----------------------------*/
+
+/* About the Author Page (Slight changes from Main Page, rest is carried over)*/
+
+#authorPage {
+    height: 1200px;
+}
+
+.me {
+    height: 400px;
+}
+
+.me_image {
+    float:left;
+    padding: 2px;
+    width: 32%;
+    height: (390x0.9)px;
+    margin-right: 40px;
+}
+
+#author {
+    width: 55%;
+    height: 310px;
+    float: right;
+    margin: 0px;
 }
