@@ -30,6 +30,7 @@ a {
     padding: 5px;
     text-decoration: none;
     color:rgb(104, 48, 104);
+    font-weight: bold;
 }
 
 a:hover{
@@ -309,6 +310,7 @@ ol {
     margin-right: 42px;
     font-size: 22px;
 }
+
 .footer a:hover {
     background-color: transparent;
     border-radius: 0em;
@@ -343,4 +345,22 @@ ol {
     height: 310px;
     float: right;
     margin: 0px;
+}
+
+/* (The Theory/Expanded Preface page) */
+
+#theoryPage {
+    height: 4450px;
+}
+
+/* (The Map page) */
+
+#mapPage {
+    height: 500px;
+}
+
+/* (The Archive page) */
+
+#archivePage {
+    height: 500px;
 }
