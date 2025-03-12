@@ -356,7 +356,23 @@ ol {
 /* (The Map page) */
 
 #mapPage {
-    height: 500px;
+    height: 1500px;
+}
+
+#map {
+    margin-left: 60px;
+    float: left;
+    border: 10px solid #c27c27c7;
+}
+
+#mapPage ul{
+    float: right;
+    margin-left: 20px;
+    margin-right: 60px;
+    font-size: 20px;
+    width: 225px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 125%;
 }
 
 /* (The Archive page) */
